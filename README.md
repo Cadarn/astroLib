@@ -28,6 +28,7 @@ Function to return the 2D polar coordinates from a pair of cartesian input argum
     Outputs: (r, theta)
         r  -- the distance from the origin of the point.
         theta -- angle of point relative to the x-axis.```
+
 ---
 ####sphdist
 Function to return the spherical distance between two sets of longitude and latitiude points.
