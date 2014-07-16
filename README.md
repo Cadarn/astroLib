@@ -94,11 +94,12 @@ Function to convert a delimited sexagesimal Dec frm DD:MM:SS to decimal degrees.
         delimiter -- string indicating the delimiter e.g. :
             
     Output:
-        returns the Dec in decimal degrees ```
+        returns the Dec in decimal degrees 
+```
 ---
 ####source
 Class that holds a basic astronomical source data structure
-####dump
+#####source.dump
 Function to dump out all of the attributes of the source to screen
 
 ---
@@ -107,8 +108,9 @@ Source class based around the data that can be pulled from a SIMBAD query
 ```    Initialise:
         SIMBADsrc(source)
     Input:
-        source -- string containing the source name you want to query from SIMBAD.```
-#####querySIMBAD
+        source -- string containing the source name you want to query from SIMBAD.
+```
+#####SIMBADsrc.querySIMBAD
 Function that searches the SIMBAD service for basic info regarding a given source name.
 ```        Inputs:
             Operates on the SIMBADsrc class instance which require a source name to be initialised
@@ -126,4 +128,5 @@ Function to perform a coordinate search around ra and dec with given radius usin
         
     Output:
         Returns a list of srcs in the region from nearest to central coords to furthest
-        Each row contains, source name, dist in arcsecs from centre, object type, ra, dec.```
+        Each row contains, source name, dist in arcsecs from centre, object type, ra, dec.
+```
