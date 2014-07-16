@@ -51,7 +51,8 @@ Function to return the spherical distance between two sets of longitude and lati
 
     Outputs: theta
         theta -- the spherical distance between the input points in degrees (default)
-        or in radians.```
+        or in radians.
+```
 ---
 ####timeCon
 Function to convert an input value from one time type to another.
