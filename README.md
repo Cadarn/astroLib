@@ -3,9 +3,8 @@ AstroLib Project
 
 Small library of useful astronomy routines
 ------------------------------------------
-
-#Introduction
 Useful set of tools that I find I need quite regularly in some of my astronomy analysis scripts.
+
 ---
 ####rec2pol
 Function to return the 2D polar coordinates from a pair of cartesian input arguments.
@@ -27,7 +26,8 @@ Function to return the 2D polar coordinates from a pair of cartesian input argum
 
     Outputs: (r, theta)
         r  -- the distance from the origin of the point.
-        theta -- angle of point relative to the x-axis.```
+        theta -- angle of point relative to the x-axis.
+```
 
 ---
 ####sphdist
