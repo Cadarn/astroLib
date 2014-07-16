@@ -427,7 +427,19 @@ class SIMBADsrc(source):
         else:
             self.Vmag = -99
             self.VmagRef = 'Not found'
-        
+
+        #Hunt for the Spectral type and reference
+        term = 'Spectral type:'
+        loc1 = data.find(term)
+        if loc1 > -1:
+            loc2 = data.find('\n',loc1)
+            temp = data[loc1+len(term):loc2].split()
+            self.specType = temp[0]
+            self.specTypeRef = temp[-1]
+        else:
+            self.specType = 'Not listed'
+            self.specTypeRef = 'Not found'        
+                        
         #Store the whole SIMBAD data stream
         self.SIMBAD = data
     
