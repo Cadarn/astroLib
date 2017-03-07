@@ -394,7 +394,7 @@ class SIMBADsrc(source):
         loc2 = data.find('\n', loc1)
         if loc1 > -1:
             otype = data[loc1:loc2]
-            self.otype = otype
+            self.otype = otype[12:-2]
         else:
             self.otype = 'Not found'
             
