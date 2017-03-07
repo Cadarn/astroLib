@@ -388,7 +388,16 @@ class SIMBADsrc(source):
         loc1 = data.find('coord')
         loc2 = data.find('\n', loc1)
         coordData = data[loc1:loc2]
-
+        
+        #extract object type
+        loc1 = data.find('main otype: ')
+        loc2 = data.find('\n', loc1)
+        if loc1 > -1:
+            otype = data[loc1:loc2]
+            self.otype = otype
+        else:
+            self.otype = 'Not found'
+            
         #Check to see if we need to split on + or - depending on the dec.   
         temp = coordData.split(': ')[1].split('(')[0]    
         if temp.find('+') == -1:
