@@ -6,7 +6,7 @@ Small library of useful astronomy routines
 Useful set of tools that I find I need quite regularly in some of my astronomy analysis scripts.
 
 ---
-####rec2pol
+#### rec2pol
 Function to return the 2D polar coordinates from a pair of cartesian input arguments.
 ```Description:
       Calculate r and theta 2D polar coordinates assuming standard Euclidean geometry
@@ -30,7 +30,7 @@ Function to return the 2D polar coordinates from a pair of cartesian input argum
 ```
 
 ---
-####sphdist
+#### sphdist
 Function to return the spherical distance between two sets of longitude and latitiude points.
 ```    Description:
         Calculate the spherical distance between two points for which longitude and
@@ -54,7 +54,7 @@ Function to return the spherical distance between two sets of longitude and lati
         or in radians.
 ```
 ---
-####timeCon
+#### timeCon
 Function to convert an input value from one time type to another.
 ```    Description:
         Convert times from one type to another. Options include:
@@ -77,7 +77,7 @@ Function to convert an input value from one time type to another.
         conTime -- the requested time.
 ```
 ---
-####HMS2dec
+#### HMS2dec
 Function to convert a delimited sexagesimal RA frm HH:MM:SS to decimal degrees.
 ```    Input:
         ra -- string in form HH:MM:SS
@@ -87,7 +87,7 @@ Function to convert a delimited sexagesimal RA frm HH:MM:SS to decimal degrees.
         returns the RA in decimal degrees    
 ```
 ---
-####DMS2dec
+#### DMS2dec
 Function to convert a delimited sexagesimal Dec frm DD:MM:SS to decimal degrees.
 ```    Input:
         dec -- string in form DD:MM:SS
@@ -97,20 +97,20 @@ Function to convert a delimited sexagesimal Dec frm DD:MM:SS to decimal degrees.
         returns the Dec in decimal degrees 
 ```
 ---
-####source
+#### source
 Class that holds a basic astronomical source data structure
-#####source.dump
+##### source.dump
 Function to dump out all of the attributes of the source to screen
 
 ---
-####SIMBADsrc
+#### SIMBADsrc
 Source class based around the data that can be pulled from a SIMBAD query
 ```    Initialise:
         SIMBADsrc(source)
     Input:
         source -- string containing the source name you want to query from SIMBAD.
 ```
-#####SIMBADsrc.querySIMBAD
+##### SIMBADsrc.querySIMBAD
 Function that searches the SIMBAD service for basic info regarding a given source name.
 ```        Inputs:
             Operates on the SIMBADsrc class instance which require a source name to be initialised
@@ -119,7 +119,7 @@ Function that searches the SIMBAD service for basic info regarding a given sourc
             Updates the internal attributes of the SIMBADsrc class instance with the SIMBAD data
 ```
 ---
-####SIMBADsearch
+#### SIMBADsearch
 Function to perform a coordinate search around ra and dec with given radius using SIMBAD
 ```    Input:
         ra -- region central right ascension.
